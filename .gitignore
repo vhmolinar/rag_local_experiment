@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+
+# Ollama Models, Binaries & Cache
+.ollama_models/
+bin/
+lib/
+
+# Large Generated Artifacts
+vector_index.json
+
+# Logs and Process IDs
+*.log
+*.pid
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
