@@ -48,7 +48,7 @@ def clean_page(text):
     return paragraphs
 
 # Test on page 5
-reader = PdfReader("nossolar.pdf")
+reader = PdfReader("book.pdf")
 page_text = reader.pages[5].extract_text()
 paragraphs = clean_page(page_text)
 

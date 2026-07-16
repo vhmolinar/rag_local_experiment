@@ -2,7 +2,7 @@ import os
 import argparse
 from rag_system import PDFProcessor, LocalVectorStore, RAGPipeline
 
-DEFAULT_PDF = "nossolar.pdf"
+DEFAULT_PDF = "book.pdf"
 DB_FILE = "vector_index.json"
 EMBEDDING_MODEL = "nomic-embed-text"
 LLM_MODEL = "llama3.2:1b"

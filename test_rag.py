@@ -2,7 +2,7 @@ import os
 from rag_system import PDFProcessor, LocalVectorStore, RAGPipeline
 
 def main():
-    pdf_path = "nossolar.pdf"
+    pdf_path = "book.pdf"
     db_path = "vector_index.json"
     ollama_url = "http://127.0.0.1:11434"
     embed_model = "nomic-embed-text"

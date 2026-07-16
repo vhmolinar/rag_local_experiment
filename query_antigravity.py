@@ -4,7 +4,7 @@ import subprocess
 import argparse
 from rag_system import LocalVectorStore, PDFProcessor
 
-DEFAULT_PDF = "nossolar.pdf"
+DEFAULT_PDF = "book.pdf"
 DB_FILE = "vector_index.json"
 EMBEDDING_MODEL = "nomic-embed-text"
 

@@ -1,6 +1,11 @@
 # Virtual Environment
 venv/
 
+# PDF Books (keep local only)
+*.pdf
+book.pdf
+nossolar.pdf
+
 # Ollama Models, Binaries & Cache
 .ollama_models/
 bin/

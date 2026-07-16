@@ -14,7 +14,7 @@ We have initialized your workspace and prepared the core files:
    * **`LocalVectorStore`**: Calls Ollama's local embeddings API, saves/loads vector indices as JSON files, and performs Cosine Similarity search via NumPy.
    * **`RAGPipeline`**: Assembles retrieved context, formats the system instructions/prompt, and queries the local LLM.
 5. **Interactive CLI Client** (`query.py`): Starts a prompt interface to ask questions about your book.
-6. **PDF Book**: Your book is located at `nossolar.pdf` in the workspace.
+6. **PDF Book**: Your book is located at `book.pdf` in the workspace.
 
 ---
 
@@ -49,7 +49,7 @@ export OLLAMA_HOST=127.0.0.1:11434
 ```
 
 ### Step 4: Run the Interactive RAG
-Start the interactive program. It will read `nossolar.pdf`, split it into overlapping chunks, request vector embeddings from Ollama, and save the indexed database to `vector_index.json` (so it only indexes once!).
+Start the interactive program. It will read `book.pdf`, split it into overlapping chunks, request vector embeddings from Ollama, and save the indexed database to `vector_index.json` (so it only indexes once!).
 ```bash
 python3 query.py
 ```
