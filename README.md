@@ -1,4 +1,4 @@
-# 📚 Local PDF RAG: Local Experiment & CLI Client
+# Local PDF RAG: Local Experiment & CLI Client
 
 A 100% local, self-hosted Retrieval-Augmented Generation (RAG) system running on an open LLM (`llama3.2:1b`) and embedding model (`nomic-embed-text`) via **Ollama**.
 
@@ -6,7 +6,7 @@ This project indexes a local PDF book and provides an interactive CLI to query i
 
 ---
 
-## 🏗️ Architecture & Technical Highlights
+## Architecture & Technical Highlights
 
 * **Text Chunking**: Paragraph-aware chunking. Strips running headers/footers, joins hyphenated line wraps, and groups natural paragraphs up to ~800 characters with a 1-paragraph overlap.
 * **Vector Store**: Pure Python and NumPy-based vector store using Cosine Similarity for search, saving/loading database indexes as plain `vector_index.json`.
@@ -15,7 +15,7 @@ This project indexes a local PDF book and provides an interactive CLI to query i
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Prerequisites
 Ensure you have Python 3 and Ollama installed.
@@ -45,7 +45,7 @@ export OLLAMA_HOST=127.0.0.1:11434
 
 ---
 
-## 📝 Running the CLI Clients
+## Running the CLI Clients
 
 ### Option A: Pure Local Ollama Pipeline
 Run the interactive Python CLI. It will automatically build the `vector_index.json` database upon its first run:
@@ -54,14 +54,14 @@ python3 query.py
 ```
 
 ### Option B: Google Antigravity CLI Pipeline
-If you have the Antigravity local CLI installed, you can leverage it for response generation:
+If you have the Antigravity local CLI installed, you can use it for response generation:
 ```bash
 python3 query_antigravity.py
 ```
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 * [rag_system.py](file:///data/dev/src/ai-stuff/rag/rag_system.py): Core chunking, vector indexing, and pipeline logic.
 * [query.py](file:///data/dev/src/ai-stuff/rag/query.py): Interactive prompt CLI using Ollama.
